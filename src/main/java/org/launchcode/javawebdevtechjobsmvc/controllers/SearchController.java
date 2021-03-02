@@ -23,7 +23,6 @@ public class SearchController {
         return "search";
     }
 
-    // TODO #3 - Create a handler to process a search request and render the updated search view.
     @PostMapping(value = "results")
     public String displaySearchResults(@RequestParam String searchType, @RequestParam String searchTerm, Model model) {
         ArrayList<Job> jobs;
